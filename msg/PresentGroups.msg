@@ -2,4 +2,5 @@
 # in the frame at a certain time
 
 std_msgs/Header header
+builtin_interfaces/Time originalFrameTime
 detecting_groups_custom_msg/Group[] groups

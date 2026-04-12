@@ -11,12 +11,13 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Group.msg"
   "msg/PresentGroups.msg"
-  DEPENDENCIES std_msgs
+  DEPENDENCIES std_msgs builtin_interfaces
 )
 
 ament_package()
